@@ -1,30 +1,30 @@
 callback(
 {  
-   "dps":
+   "ppd":
    [  
       {  
-         "date":1493922600000,
-         "pegawai":320
+         "departemen":"Makanan",
+         "pegawai":10
       },
       {  
-         "date":1494009000000,
-         "pegawai":552
+         "departemen":"Minuman",
+         "pegawai":8
       },
       {  
-         "date":1494095400000,
-         "pegawai":342
+         "departemen":"Elektronik",
+         "pegawai":5
       },
       {  
-         "date":1494181800000,
-         "pegawai":431
+         "departemen":"Pakaian",
+         "pegawai":5
       },
       {  
-         "date":1494268200000,
-         "pegawai":251
+         "departemen":"Keuangan",
+         "pegawai":3
       },
       {  
-         "date":1494354600000,
-         "pegawai":445
+         "departemen":"Keamanan",
+         "pegawai":4
       }
    ]
 })

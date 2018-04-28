@@ -18,4 +18,10 @@ $('button').click(function()
 	}
 });
 
+
+var docHeight = $(document).height();
+var winHeight = $(window).height();
+
+console.log(docHeight + " " + winHeight);
+
 /* Kode JQuery */
