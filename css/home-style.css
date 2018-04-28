@@ -35,13 +35,6 @@ body .tittle
 	overflow: hidden;
 	max-height: 170px;
 }
-/*
-.jumbotron img
-{
-	width: 224px;
-	border: 4px solid #575757;
-	box-shadow: 1px 1px 10px rgba(0,0,0,0.75);
-}*/
 
 .jumbotron h1
 {
@@ -122,6 +115,22 @@ ul.dropdown-menu
 
 /* Jumbotron */
 
+/* Notifikasi ketika Submit */
+
+div.notifSubmition.notifSuccess,
+div.notifSubmition.notifFailed
+{
+	margin: -32px 0 0 0;
+	padding: 0 0 0 0;
+	background-color: #22ff22;
+}
+
+div.notifSubmition.notifFailed
+{
+	background-color: #ff5555;
+}
+
+/* Notifikasi ketika Submit */
 
 /* Judul Halaman Department */
 

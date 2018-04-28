@@ -1,7 +1,6 @@
-/* Kode JQuery */
-
 $('button').click(function()
 {
+	/* Fungsi Button Pada Home */
 	var idPage = $(this).attr('id');
 
 	if(idPage == "jobBtn")
@@ -16,12 +15,6 @@ $('button').click(function()
 	{
 		window.location.href = "data/department.html";
 	}
+	/* Fungsi Button Pada Home */
+
 });
-
-
-var docHeight = $(document).height();
-var winHeight = $(window).height();
-
-console.log(docHeight + " " + winHeight);
-
-/* Kode JQuery */
