@@ -276,7 +276,7 @@ p a
 
 html#home footer .footer-website
 {
-	position: absolute;
+	position: fixed;
 }
 
 html#job footer .footer-website

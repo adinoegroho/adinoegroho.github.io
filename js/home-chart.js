@@ -60,13 +60,13 @@ window.onload = function()
     },
     axisY: 
     {
-      title: "Units",
+      title: "pegawai",
       titleFontSize: 24
     },
     data: 
     [{
       type: "column",
-      yValueFormatString: "#,### Units",
+      yValueFormatString: "#,### pegawai",
       dataPoints: dataPoints
     }]
   });
@@ -83,7 +83,7 @@ function callback(data)
     dataPoints.push(
     {
       x: new Date(data.dps[i].date),
-      y: data.dps[i].units
+      y: data.dps[i].pegawai
     });
   }
   chart.render(); 
