@@ -1,5 +1,22 @@
 $('#submitBtn').click(function()
 {
+	var inputFieldList = $('input').toArray();
+
+	for(var num = 0; num < inputFieldList.length; num++)
+	{
+		var inputFieldId = "#" + $(inputFieldList[num]).attr('id');
+
+		// console.log(inputFieldList.length);
+
+		if ($(inputFieldId).val() != "")
+		{
+			$('h4.notifSubmition').remove();
+			$('#notifSubmition').append('<h4 class="text-center notifSubmition">Data berhasil disimpan.</h4>');
+			$('div#notifSubmition').addClass('notifSubmition notifSuccess');
+			return false;
+		}
+	}
+
 	$('input').each(function()
 	{
 		if($(this).val() == "")
@@ -14,24 +31,11 @@ $('#submitBtn').click(function()
 				}
 			});
 
-			$('#notifSubmition').append('');
+			$('h4.notifSubmition').remove();
 			$('#notifSubmition').append('<h4 class="text-center notifSubmition">' + labelForId + ' tidak boleh kosong.</h4>');
 			$('div#notifSubmition').addClass('notifSubmition notifFailed');
 
 			return false;
 		}
 	});
-
-	// var inputFieldList = document.getElementsByTagName('input');
-
-	// foreach(var inputField in inputFieldList)
-	// {
-	// 	var inputFieldId = inputField.attr(id);
-
-	// 	if ($('input#' + inputFieldId).val() != "")
-	// 	{
-	// 		$('#notifSubmition').append('');
-	// 		$('#notifSubmition').append('<h4 class="text-center notifSubmition notifSuccess">Data berhasil disimpan.</h4>');
-	// 	}
-	// }
 });
