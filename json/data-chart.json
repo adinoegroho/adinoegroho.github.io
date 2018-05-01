@@ -4,27 +4,27 @@ callback(
    [  
       {  
          "departemen":"Makanan",
-         "pegawai":10
+         "pegawai":254
       },
       {  
          "departemen":"Minuman",
-         "pegawai":8
+         "pegawai":203
       },
       {  
          "departemen":"Elektronik",
-         "pegawai":5
+         "pegawai":111
       },
       {  
          "departemen":"Pakaian",
-         "pegawai":5
+         "pegawai":148
       },
       {  
          "departemen":"Keuangan",
-         "pegawai":3
+         "pegawai":80
       },
       {  
          "departemen":"Keamanan",
-         "pegawai":4
+         "pegawai":123
       }
    ]
 })
