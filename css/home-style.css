@@ -14,38 +14,74 @@ section.content
 	min-height: 400;
 }
 
-body .tittle
+body .title
 {
-	margin-top: -32px;
+	margin-top: 0px;
 }
 
 
 /* Jumbotron */
 
-.jumbotron
+/* Navbar Home dan Account */
+
+/* Job, Department, Employee Navbar Span */
+
+#job nav .icon-bar,
+#employ nav .icon-bar,
+#depart nav .icon-bar
 {
-	padding-top: 6px;
-	padding-bottom: 8px;
-	margin-top: 0;
-	background-image: url('');
-	background-attachment: fixed;
-	background-size: cover;
-	background-position: -32px -32px;
-	color: white;
-	overflow: hidden;
-	max-height: 170px;
+	width: 100%;
+	background-color: #f0ad4e;
 }
 
-.jumbotron h1
+#job .navbar-header button,
+#employ .navbar-header button,
+#depart .navbar-header button
 {
-	margin-top: 40px;
-	text-shadow: 1px 1px 10px rgba(0,0,0,0.75);
-	font-style: italic;
+	padding: 3px 3px 3px 3px;
 }
 
-.menuBar
+/* Job, Department, Employee Navbar Span */
+
+div.navbar-menu-custom,
+div.navbar-menu-custom span,
+nav a
 {
-	margin-top: -32px;
+	color: #f0ad4e;
+}
+
+hr.collapse-menu
+{
+	border-top: 1px solid #f0ad4e;
+	margin: 0 4% 0 4%;
+}
+
+nav div.navbar-header button
+{
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+	border-style: none;
+	background-color: rgba(0, 0, 0, 0);
+	height: 32px;
+	width: 32px;
+	font-size: 32px;
+}
+
+nav.navbar-custom
+{
+	margin-bottom: 0;
+	background-color: rgba(0,0,0,0);
+	border-color: rgba(0,0,0,0);
+}
+
+nav div.container-fluid
+{
+	padding: 0 0 0 0;
+}
+
+nav div.navbar-menu-custom
+{
+	padding: 8px 8px 8px 8px;
 }
 
 .homeBtn
@@ -56,50 +92,81 @@ body .tittle
 	font-size: 32px;
 }
 
-.homeBtnAlign
-{
-	padding-left: 8px;
-}
-
-.accBtnAlign
-{
-	text-align: right;
-	padding-right: 8px;
-}
-
 .accBtn
 {
+	margin-right: 8px;
+	margin-top: 4px;
 	color: #f0ad4e;
 	background-color: rgba(0,0,0,0);
 	border-color: rgba(0,0,0,0);
 	font-size: 24px;
 }
 
-ul.dropdown-menu
+ul.dropdown-menu > li
 {
-	max-width: 64px;
+	width: 60% !important;
 }
 
-.homeBTn a:hover span
+ul.dropdown-menu
 {
-	color: #f0ad40;
+	top: 75%;
+	width: 128px !important;
+}
+
+/* Navbar Home dan Account */
+
+.jumbotron
+{
+	padding-top: 0;
+	padding-bottom: 0;
+	margin: 0 0 0 0;
+	overflow: hidden;
+	height: 200px;
+}
+
+.jumbotron h1
+{
+	margin-top: 8px;
+	margin-bottom: 0;
+	text-shadow: 1px 1px 10px rgba(0,0,0,0.75);
+	font-style: italic;
+	color: white;
+}
+
+div.title-jumbotron
+{
+	padding: 0 0 0 0;
+	height: 40%;
+}
+
+/* Navbar About */
+
+/* Jumbotron */
+
+div.aboutBtnArea
+{
+	margin-top: 2%;
+	padding: 0 8px 8px 0;
 }
 
 .aboutBtn
 {
 	padding: 0 0 0 0;
-	margin-right: 0px;
-	margin-bottom: 0px;
+	margin-right: 0;
+	margin-bottom: 0;
 	position: 0px 16px;
 	height: 24px;
 	width: 48px;
 	color: white;
 }
 
-.aboutBtnAlign
+/* Navbar About */
+
+/* Navbar Menu Form Database */
+
+.menuBar
 {
-	padding-right: 4px;
-	text-align: right;
+	margin: 0 0 0 0;
 }
 
 .menuBtn
@@ -107,13 +174,7 @@ ul.dropdown-menu
 	box-shadow: 1px 1px 5px rgba(0,0,0,0.75);
 }
 
-#areaChart
-{
-	margin-top: 16px;
-	padding-bottom: 16px;
-}
-
-/* Jumbotron */
+/* Navbar Menu Form Database */
 
 /* Notifikasi ketika Submit */
 
@@ -126,7 +187,7 @@ div#notifSubmition
 div.notifSubmition.notifSuccess,
 div.notifSubmition.notifFailed
 {
-	margin: -32px 0 0 0;
+	margin: 0 0 0 0;
 	padding: 0 0 0 0;
 	background-color: #22ff22;
 }
@@ -194,6 +255,11 @@ html#job hr.hr2
 
 /* Content */
 
+#areaChart
+{
+	margin-top: 16px;
+	padding-bottom: 16px;
+}
 
 .form-input input, .form-input .btn
 {
@@ -240,7 +306,7 @@ html#job hr.hr2
 
 .modal-dialog
 {
-	width: 400px;
+	max-width: 400px;
 }
 
 .modal-header
